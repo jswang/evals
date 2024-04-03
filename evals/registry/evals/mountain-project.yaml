@@ -7,6 +7,9 @@ mountain-project.dev.v0:
   # class: evals.elsuite.basic.includes:Includes
   class: evals.elsuite.modelgraded.classify:ModelBasedClassify
   args:
-    samples_jsonl: mountain_project/samples.jsonl
-    args:
-      samples_jsonl: mountain_project/samples.jsonl
+    # This samples.jsonl should contain all of the
+    # fields in evals/registry/modelgraded/fact.yaml
+    # using loss_logic/samples.jsonl as a template
+    samples_jsonl: mountain-project/samples.jsonl
+    eval_type: cot_classify
+    modelgraded_spec: fact
