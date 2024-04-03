@@ -1,0 +1,12 @@
+mountain-project:
+  id: mountain-project.dev.v0
+  metrics: [accuracy]
+
+mountain-project.dev.v0:
+  # maps to evals/elsuite/basic/includes.py, class Includes
+  # class: evals.elsuite.basic.includes:Includes
+  class: evals.elsuite.modelgraded.classify:ModelBasedClassify
+  args:
+    samples_jsonl: mountain_project/samples.jsonl
+    args:
+      samples_jsonl: mountain_project/samples.jsonl
